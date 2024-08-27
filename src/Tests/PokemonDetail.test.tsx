@@ -31,6 +31,7 @@ test('API Call Test: Verify that the detail API is called with the correct Poké
   });
 });
 
+
 test('Error Handling Test: Simulate an error and ensure the error message is displayed', async () => {
   global.fetch = jest.fn(() =>
     Promise.resolve({
@@ -53,6 +54,8 @@ test('Error Handling Test: Simulate an error and ensure the error message is dis
   });
 });
 
+
+// Test for edge case (invalid ID)
 test('Edge Case Test: Test how the app behaves when the Pokémon ID is invalid', async () => {
   global.fetch = jest.fn(() =>
     Promise.resolve({

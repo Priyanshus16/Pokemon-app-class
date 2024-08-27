@@ -7,7 +7,7 @@ interface PokemonDetailData {
 
 interface PokemonDetailControllerProps {
   id: string;
-  children: (state: PokemonDetailControllerState) => ReactNode; // Type children prop
+  children: (state: PokemonDetailControllerState) => ReactNode; 
 }
 
 interface PokemonDetailControllerState {
